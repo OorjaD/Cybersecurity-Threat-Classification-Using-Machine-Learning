@@ -1,37 +1,27 @@
-# Intrusion Detection (CIC-IDS2017)
+# Cybersecurity Threat Classification Using ML for CICIDS2017
 
 ## Overview
-This repository contains an in-depth analysis of the Intrusion Detection Evaluation Dataset (CIC-IDS2017) for Intrusion Detection. Canadian Institute for Cybersecurity (CIC) designed this dataset for the development and evaluation of intrusion detection systems (IDS). The primary focus of this repository is to showcase the implementation and comparison of different machine learning models for binary and multi-class classification tasks. The dataset can be obtained from [here](https://www.unb.ca/cic/datasets/ids-2017.html).
+This repository presents a comprehensive analysis of the CIC-IDS2017 dataset, developed by the Canadian Institute for Cybersecurity (CIC) for advancing intrusion detection systems (IDS). The core objective is to demonstrate the implementation and evaluation of various machine learning models for binary and multi-class network intrusion classification. The dataset is publicly accessible. The dataset can be obtained from [here](https://www.unb.ca/cic/datasets/ids-2017.html).
 
 ## Dataset Characteristics
 ### Size and Composition
-- Over 2.8 million instances were captured over 5 days (July 3 to July 7, 2017).
-- Includes normal traffic and various attacks: Brute Force, Heartbleed, Botnet, DoS, DDoS, Web Attack and Infiltration.
-- A highly imbalanced dataset with a majority of records labeled as 'Benign.' (normal traffic) 
+- The dataset contains more than 2.8 million records collected over a five-day period (from July 3 to July 7, 2017).
+- It features both normal network activity and a variety of attack types, including Brute Force, Heartbleed, Botnet, DoS, DDoS, Web Attacks, and Infiltration.
+- The data is significantly imbalanced, with the majority of entries labeled as 'Benign' (representing normal traffic).
 
-### Data Features
-- 79 columns with 78 numerical features and a categorical 'Label' column.
-- Features include network flow characteristics such as flow duration, packet lengths, ports, flags and more.
+### Dataset Overview
+- The dataset comprises 79 features—78 numerical attributes describing network flow metrics (such as flow duration, packet sizes, ports, and flags), along with a categorical 'Label' column indicating the type of traffic. It also includes a thorough exploratory data analysis (EDA), providing insights into the dataset’s structure and characteristics, while highlighting key patterns and anomalies through visualizations.
 
-## Contents
-### Dataset Characteristics and Exploratory Data Analysis (EDA)
-- Detailed insights into the dataset's structure, characteristics and an EDA highlighting patterns and anomalies using visualizations.
-
-### Data Preprocessing
-- Steps taken to clean the data, handling duplicates and missing values, memory optimization techniques, data standardization and applying PCA to make the dataset suitable for analysis.
-
-### Machine Learning Models
-- Implementing and training various machine learning models, including Logistic Regression, Support Vector Machine, Random Forest Classifier, Decision Tree and K-Nearest Neighbours. Both binary and multi-class classifications are explored.
+### Data Preprocessing and ML models
+- The data preprocessing phase involved cleaning the dataset by addressing duplicates and missing values, optimizing memory usage, standardizing features, and applying PCA to enhance the dataset’s suitability for analysis.
+- Multiple machine learning models were implemented and trained, including Logistic Regression, Support Vector Machine, Random Forest, Decision Tree, and K-Nearest Neighbors. The analysis covers both binary and multi-class classification tasks.
 
 ### Performance Evaluation and Discussion
-- Evaluation metrics such as accuracy, recall, F1-score and confusion matrix are presented for each model. The impact of class imbalance on model performance is discussed.
+- Each model's performance is assessed using evaluation metrics including accuracy, recall, F1-score, and the confusion matrix. Additionally, the effects of class imbalance on the effectiveness of the models are analyzed and discussed.
 
 ## Key Features
-- Use of data preprocessing techniques, including standardization to bring uniformity, Principal Component Analysis (PCA) for dimensionality reduction and Synthetic Minority Over-sampling Technique (SMOTE) to balance the class distribution.
-- Implements both binary and multi-class classification models.
-- Utilizes machine learning algorithms including Logistic Regression, Support Vector Machine (SVM), Random Forest, Decision Trees and K-Nearest Neighbors (KNN).
-- Uses a real-world dataset for training and testing.
-- Use of cross-validation to ensure that models are not overfitted.
-- Provides extensive analysis and comparisons of the different classification algorithms.
-- Includes performance evaluation metrics, including precision, recall, accuracy, F1-score, confusion matrix and more.
-- Offers insights into improving network security by selecting the most suitable model.
+- Applies a range of data preprocessing techniques, including feature standardization for consistency, Principal Component Analysis (PCA) for reducing dimensionality, and SMOTE for addressing class imbalance. Explores both binary and multi-class classification approaches.
+- Employs various machine learning algorithms such as Logistic Regression, Support Vector Machines (SVM), Random Forests, Decision Trees, and K-Nearest Neighbors (KNN).
+- Leverages a real-world dataset for training and evaluation and utilizes cross-validation to prevent overfitting and ensure robust model performance.
+- Delivers a comprehensive comparison and analysis of multiple classification models and evaluates performance using metrics like precision, recall, accuracy, F1-score, and confusion matrix.
+- Provides actionable insights into enhancing network security by identifying the most effective model for intrusion detection.
